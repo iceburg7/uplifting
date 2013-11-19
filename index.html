@@ -49,6 +49,7 @@
 									console.log(response.statuses[2].favorite_count);
 									
 									$(".comment").append("<p>" + response.statuses[2].text + "</p>");
+									$(".bicep").css("height",184+(response.statuses[2].favorite_count * 25));
 										
                                 });
                         });
@@ -64,8 +65,8 @@
 					margin-left:auto;
 					margin-right:auto;
 					margin-top:20px;
-					postition:relative;
-					background-image:url(images/bicep.png);
+					position:relative;
+					background-image:url(images/bicep2.png);
 					background-repeat:no-repeat;
 				}
 				
@@ -93,6 +94,15 @@
 					background-color:#68BBF2;
 				}
 				
+				.bicep {
+					width:513px;
+					height:184px;
+					background-image:url(images/bicep1small.png);
+					background-size:100% 100%;
+					position:absolute;
+					bottom:0px;
+					left:0px;
+				}
 					
 				
 				</style>
@@ -103,6 +113,9 @@
 				
 				<div class="title">
 					Lifting Up Uplifting Comments
+				</div>
+				
+				<div class="bicep">
 				</div>
 				
 				
